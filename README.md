@@ -5,8 +5,9 @@ watch dom change
 
 ##usage
 
-检测节点变化
-$(elem).watch(selector, callback, options)
+监视节点变化
+
+**$(elem).watch(selector, callback, options)**
 
 
     $('body').watch('.test-1 p', function(elem){
@@ -26,3 +27,9 @@ loadfirst为true时，会先检测selector是否存在（存在就会触发callb
     .watch('.test-2 p', function(elem){
       //todo
     }, {loadfirst:true});
+
+
+
+关闭监视
+
+**$(elem).unObserver()**
